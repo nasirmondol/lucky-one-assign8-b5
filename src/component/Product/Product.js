@@ -9,7 +9,7 @@ const Product = (props) => {
             <h3>{name}</h3>
             <p>Price: ${price}</p>
             <div>
-                <button className='button'>Buy now</button>
+                <button className='button'><p className='p-text'>ADD TO CART</p></button>
             </div>
         </div>
         
