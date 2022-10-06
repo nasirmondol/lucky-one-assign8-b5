@@ -13,7 +13,7 @@ const Products = () => {
       .then(data => setProducts(data))
     }, [])
     return (
-        <>
+        <div className='container1'>
         <div className='text-container'>
             <h1 className='heading'>It will be confused you</h1>
             <h4 className='heading'>You can choose only four items phone</h4>
@@ -28,7 +28,7 @@ const Products = () => {
                 <Cart></Cart>
            </div>
         </div>
-        </>
+        </div>
     );
 };
 

@@ -1,7 +1,7 @@
 .products{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    margin: 15px;
+    margin: 5px;
 }
 .products-container{
     display: grid;
@@ -17,4 +17,11 @@
 .heading{
     margin-top: 0;
     margin-bottom: 0;
+}
+
+@media screen and (max-width:600px) {
+    .products{
+        grid-template-columns: repeat(1, 1fr);
+        background-color: oldlace;
+    }
 }
