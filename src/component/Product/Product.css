@@ -10,14 +10,12 @@
 }
 
 .button{
-    /* margin: 15px; */
-    /* padding: 5px; */
+    margin: 0;
+    width: 100%;
     background-color: seagreen; 
-    /* color: white; */
     border: none;
     border-radius: 3px;
 }
 .p-text{
-    width: 100%;
     color: aliceblue;
 }

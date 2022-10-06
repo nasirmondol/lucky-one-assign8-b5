@@ -9,6 +9,12 @@
     padding: 30px 10px;
 }
 
-/* .cart-container{
-    
-} */
+.text-container{
+    font-size: smaller;
+    font-size: 25px;
+    color: limegreen;
+}
+.heading{
+    margin-top: 0;
+    margin-bottom: 0;
+}
