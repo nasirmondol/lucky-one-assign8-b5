@@ -1,0 +1,19 @@
+.product-container{
+    border: 1px solid thistle;
+    margin: 20px;
+    border-radius: 6px;
+    padding: 10px
+}
+.product-container img{
+    height: 280px;
+    width: 290px;
+}
+
+.button{
+    margin: 15px;
+    padding: 8px;
+    background-color: seagreen;
+    color: white;
+    border: none;
+    border-radius: 3px;
+}
