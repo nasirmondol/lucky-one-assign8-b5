@@ -6,12 +6,18 @@ import './Products.css';
 
 const Products = () => {
     const [products, setProducts] = useState([])
+    const [cart, setCart] = useState([]);
+    // console.log(cart)
 
     useEffect(() => {
       fetch('mobile.json')
       .then(res => res.json())
       .then(data => setProducts(data))
-    }, [])
+    }, []);
+
+    const handleAddToCart = product =>{
+       setCart(product)
+    }
     return (
         <div className='container1'>
         <div className='text-container'>
@@ -21,11 +27,15 @@ const Products = () => {
         <div className='products-container'>
            <div className='products'>
             {
-                products.map(product => <Product product={product}></Product>)
+                products.map(product => <Product
+                    handleAddToCart={handleAddToCart}
+                    key={product.id} 
+                    product={product}
+                    ></Product>)
             }
            </div>
            <div className='cart-container'>
-                <Cart></Cart>
+                <Cart cart={cart}></Cart>
            </div>
         </div>
         </div>

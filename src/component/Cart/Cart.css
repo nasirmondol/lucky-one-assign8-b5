@@ -13,3 +13,17 @@
     padding: 10px;
     color: white;
 }
+.cart-child{
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+    padding: 10px;
+}
+.cart-child img{
+    border-radius: 50%;
+    border: 1px solid black;
+}
+
+.image{
+    margin: 19px;
+}
