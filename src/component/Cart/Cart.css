@@ -37,19 +37,23 @@
     margin-bottom: 5px;
 }
 .cart-button{
+    margin-top: 10px;
     justify-content: left;
+    color: aliceblue;
+    height: 30px;
     margin-right: 80px;
-    /* width: 50%; */
-    background-color: seagreen; 
+    background-color: green; 
     border: none;
     border-radius: 3px; 
 }
-
-/* display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 0;
-    width: 100%;
-    background-color: seagreen; 
+.btn-remove{
+    margin: 15px;
+    color: aliceblue;
+    height: 30px;
+    margin-right: 120px;
+    background-color: red; 
     border: none;
-    border-radius: 3px; */
+    border-radius: 3px; 
+    text-align: center;
+}
+

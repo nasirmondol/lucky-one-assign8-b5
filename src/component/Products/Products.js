@@ -7,7 +7,6 @@ import './Products.css';
 const Products = () => {
     const [products, setProducts] = useState([])
     const [cart, setCart] = useState([]);
-    // console.log(cart)
 
     useEffect(() => {
       fetch('mobile.json')
@@ -16,10 +15,15 @@ const Products = () => {
     }, []);
 
     const handleAddToCart = product =>{
-        const products = [];
         let newCart = [...cart, product];
         setCart(newCart);
        setCart = [];
+       if(newCart.length !== 4){
+            newCart = [...cart, product];
+       }
+       else{
+        setCart = [];
+       }
     }
     return (
         <div className='container1'>

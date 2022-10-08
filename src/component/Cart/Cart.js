@@ -17,7 +17,11 @@ const Cart = (props) => {
                         <h3 className='cart-text'> {singleCart.name}</h3>
                     </div>)
                 }
-                <button onClick={()=>props.setCart()} className='cart-button'>CHOOSE 1 FOR ME</button>
+                
+                <button className='cart-button'>CHOOSE 1 FOR ME</button>
+                <button className='btn-remove' onClick={()=>props.setCart()}>
+                CHOOSE AGAIN
+                </button>
         </div>
     );
 };
